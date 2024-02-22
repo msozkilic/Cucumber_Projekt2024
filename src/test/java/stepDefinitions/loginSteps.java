@@ -18,6 +18,7 @@ public class loginSteps {
     }
     @Given("Click to Sign in button")
     public void click_to_sign_in_button() {
+        lp.findAndClick("signInButton");
 
     }
     @Given("Enter username as {string} and password as {string}")
