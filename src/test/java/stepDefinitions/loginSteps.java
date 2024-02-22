@@ -22,15 +22,22 @@ public class loginSteps {
 
     }
     @Given("Enter username as {string} and password as {string}")
-    public void enter_username_as_and_password_as(String string, String string2) {
+    public void enter_username_as_and_password_as(String login11, String password2) {
+        lp.findAndSend("login",login11);
+        lp.findAndSend("password",password2);
 
     }
     @When("click login button")
     public void click_login_button() {
-        System.out.println("calisti");
+       lp.findAndClick("loginButton");
+       lp.findAndClick("warningButton");
+       lp.findAndClick("warningLink");
     }
+
+
     @Then("Verify that you are logged in.")
     public void verify_that_you_are_logged_in() {
-        System.out.println("calisti");
+
+
     }
 }
