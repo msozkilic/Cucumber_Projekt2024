@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 public class loginSteps {
 
@@ -37,6 +38,10 @@ public class loginSteps {
 
     @Then("Verify that you are logged in.")
     public void verify_that_you_are_logged_in() {
+
+        String expected="http://zero.webappsecurity.com/bank/account-summary.html";
+        String actual=baseDriver.getDriver().getCurrentUrl();
+        Assert.assertEquals(expected,actual);
 
 
     }
