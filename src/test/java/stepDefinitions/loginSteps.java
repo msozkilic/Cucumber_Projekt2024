@@ -31,8 +31,8 @@ public class loginSteps {
     @When("click login button")
     public void click_login_button() {
       lp.findAndClick("loginButton");
-     /*  lp.findAndClick("warningButton");
-       lp.findAndClick("warningLink");   */
+       lp.findAndClick("warningButton");
+       lp.findAndClick("warningLink");
 
     }
 
@@ -40,10 +40,10 @@ public class loginSteps {
     @Then("Verify that you are logged in.")
     public void verify_that_you_are_logged_in() {
 
-     /*   String expected="http://zero.webappsecurity.com/bank/account-summary.html";
+        String expected="http://zero.webappsecurity.com/bank/account-summary.html";
         String actual=baseDriver.getDriver().getCurrentUrl();
         Assert.assertEquals(expected,actual);
-*/
+
 
     }
 }
