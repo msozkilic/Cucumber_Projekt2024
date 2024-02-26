@@ -10,6 +10,7 @@ public class foreignCurrencySteps {
     public void click_login_button() {
 
 
+
     }
     @Then("Click to Pay Bills button")
     public void click_to_pay_bills_button() {
